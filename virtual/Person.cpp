@@ -7,6 +7,12 @@ Person::Person()
 	this->Add();
 }
 
+Person::Person(string n)
+{
+	name = n;
+	this->Add();
+}
+
 
 Person::~Person()
 {

@@ -1,15 +1,15 @@
 #pragma once
 #include "Person.h"
 class Student :
-	virtual public Person
+	public Person
 {
 protected:
 	int classes;
 	int missedClasses;
 public:
 	Student();
-	Student(int, int);
-	virtual ~Student();
+	Student(string, int, int);
+	~Student();
 	void show();
 
 };

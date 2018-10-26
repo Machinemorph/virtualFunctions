@@ -8,7 +8,7 @@ Student::Student() : Person()
 	missedClasses = 0;
 }
 
-Student::Student(int cl, int misdCl) : Person()
+Student::Student(string n, int cl, int misdCl) : Person(n)
 {
 	classes = cl;
 	missedClasses = misdCl;
@@ -21,5 +21,5 @@ Student::~Student()
 
 void Student::show()
 {
-	cout << "Студент\nПропустил " << missedClasses << " занятий из " << classes << endl;
+	cout << "Студент\n" << name << "\nПропустил " << missedClasses << " занятий из " << classes << endl;
 }

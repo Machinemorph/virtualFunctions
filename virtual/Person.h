@@ -3,6 +3,7 @@ class Person
 {
 public:
 	Person();
+	Person(string);
 	virtual ~Person();
 	static Person* begin;
 	static void print();
@@ -12,6 +13,7 @@ public:
 	virtual void show() = 0;
 	void Add();
 protected:
+	string name;
 	Person * next;
 };
 

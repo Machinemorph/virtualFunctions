@@ -7,7 +7,7 @@ Lecturer::Lecturer() : Person()
 	hours = 0;
 }
 
-Lecturer::Lecturer(int h) : Person()
+Lecturer::Lecturer(string n, int h) : Person(n)
 {
 	hours = h;
 }
@@ -18,5 +18,5 @@ Lecturer::~Lecturer()
 
 void Lecturer::show()
 {
-	cout << "Преподаватель\nВедёт " << hours << " часов\n";
+	cout << "Преподаватель\n" << name << "\nВедёт " << hours << " часов\n";
 }

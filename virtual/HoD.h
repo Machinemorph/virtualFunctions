@@ -5,8 +5,8 @@ class HoD :
 {
 public:
 	HoD();
-	HoD(int, int);
-	virtual ~HoD();
+	HoD(string, int, int);
+	~HoD();
 	void show();
 protected:
 	int subs_num;

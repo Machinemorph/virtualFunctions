@@ -1,12 +1,12 @@
 #pragma once
 #include "Person.h"
 class Lecturer :
-	virtual public Person
+	public Person
 {
 public:
 	Lecturer();
-	Lecturer(int);
-	virtual ~Lecturer();
+	Lecturer(string, int);
+	~Lecturer();
 	void show();
 protected:
 	int hours;
